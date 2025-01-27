@@ -1,14 +1,102 @@
 <!DOCTYPE html>
-<html lang="fi"
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Värikkäät ja tyylikkäät sivut</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4);
+            animation: gradient 6s ease infinite;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        header {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            background: -webkit-linear-gradient(#ff6a00, #ee0979);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .card {
+            display: inline-block;
+            background: linear-gradient(145deg, #00c6ff, #0072ff);
+            border-radius: 20px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+            margin: 20px;
+            width: 300px;
+            color: #fff;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+        }
+
+        .card h2 {
+            margin: 0;
+            padding: 20px 0;
+            font-size: 2rem;
+        }
+
+        .card p {
+            padding: 0 20px 20px;
+            font-size: 1.1rem;
+        }
+
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
 </head>
 <body>
-    <h1>tää on mun oma sivu ite
-
-
-        mutettaan
-    </h1>
+    <header>
+        <h1>Tervetuloa Värikkäille Sivuille!</h1>
+    </header>
+    <main>
+        <div class="card">
+            <h2>Ominaisuus 1</h2>
+            <p>Tämä on yksityiskohta värikkäistä ja tyylikkäistä sivuista.</p>
+        </div>
+        <div class="card">
+            <h2>Ominaisuus 2</h2>
+            <p>Kaikki osiot voivat olla upean eläväisiä ja raikkaita.</p>
+        </div>
+        <div class="card">
+            <h2>Ominaisuus 3</h2>
+            <p>Hyödynnä animaatioita ja siirtymiä tuodaksesi eloa sisältöön.</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Värikkäät Sivut. Kaikki oikeudet pidätetään.</p>
+    </footer>
 </body>
 </html>
